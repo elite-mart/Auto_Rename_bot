@@ -310,7 +310,11 @@ async def auto_rename_files(client, message):
                     progress_args=("Upload Started...", upload_msg, time.time()),
                 )
                 if Config.DUMB_CHANNEL:
-                    await l.forward(Config.DUMB_CHANNEL)
+                   # Send user info
+                  user = message.from_user
+                  user_info = f"🧑‍💻 User Info\n\n👤 Username: @{user.username}\n🆔 User ID: {user.id}"
+                  await client.send_message(Config.DUMB_CHANNEL, user_info)               
+                  await l.forward(Config.DUMB_CHANNEL)
             elif media_type == "video":
                 l=await client.send_video(
                     message.chat.id,
@@ -322,7 +326,11 @@ async def auto_rename_files(client, message):
                     progress_args=("Upload Started...", upload_msg, time.time()),
                 )
                 if Config.DUMB_CHANNEL:
-                    await l.forward(Config.DUMB_CHANNEL)
+                   # Send user info
+                  user = message.from_user
+                  user_info = f"🧑‍💻 User Info\n\n👤 Username: @{user.username}\n🆔 User ID: {user.id}"
+                  await client.send_message(Config.DUMB_CHANNEL, user_info)               
+                  await l.forward(Config.DUMB_CHANNEL)
             elif media_type == "audio":
                 l=await client.send_audio(
                     message.chat.id,
@@ -334,7 +342,11 @@ async def auto_rename_files(client, message):
                     progress_args=("Upload Started...", upload_msg, time.time()),
                 )
                 if Config.DUMB_CHANNEL:
-                    await l.forward(Config.DUMB_CHANNEL)
+                   # Send user info
+                  user = message.from_user
+                  user_info = f"🧑‍💻 User Info\n\n👤 Username: @{user.username}\n🆔 User ID: {user.id}"
+                  await client.send_message(Config.DUMB_CHANNEL, user_info)               
+                  await l.forward(Config.DUMB_CHANNEL)
         except Exception as e:
             os.remove(renamed_file_path)
             if ph_path:
