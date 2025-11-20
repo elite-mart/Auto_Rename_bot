@@ -2,7 +2,7 @@
 <center><img style="border-radius:30" src="https://files.catbox.moe/ufzpkn.jpg" ></center>
 <p align="center">
   <a href="https://www.python.org">
-    <img width="10" height="10" src="http://ForTheBadge.com/images/badges/made-with-python.svg" width ="250">
+    <img width="50" height="40" src="http://ForTheBadge.com/images/badges/made-with-python.svg" width ="250">
   </a> 
 </p>
 
