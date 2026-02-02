@@ -5,7 +5,7 @@ id_pattern = re.compile(r'^.\d+$')
 
 
 # Fetch initial admin list
-ADMIN = []  # TemporLoad admins when the bot starts
+ADMIN = [8413314479]  # TemporLoad admins when the bot starts
 
 TOKEN_VERIFY=False
 API = environ.get("API", "5a7508a173d6462e4cd4b723766b92541c389a6b") # shortlink api
@@ -17,7 +17,7 @@ USER_LIMIT_TIME = int(os.environ.get("USER_LIMIT_TIME", "1"))#enter time based o
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", " ")
+    API_ID    = os.environ.get("API_ID", "")
     API_HASH  = os.environ.get("API_HASH", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
 
@@ -33,8 +33,8 @@ class Config(object):
     START_PIC   = os.environ.get("START_PIC", "https://files.catbox.moe/fk1q17.jpg")
     
     FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', "").split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "" ))
-    DUMB_CHANNEL = os.environ.get("DUMB_CHANNEL", "")
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "1003846203720" ))
+    DUMB_CHANNEL = os.environ.get("DUMB_CHANNEL", "1003831184068")
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
